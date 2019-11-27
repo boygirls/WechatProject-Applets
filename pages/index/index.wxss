@@ -1,0 +1,63 @@
+.homeTitle{
+  flex-direction: row;
+  display: flex;
+}
+.homeTitle view{
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.homeTitleClick{
+  border-bottom:2px solid red;
+}
+.homeMiddle{
+  width: 100%;
+  height:200px;
+  padding: 5px;
+  font:400 bold;
+  color:#999;
+}
+.homeMiddle .title{
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.homeMiddle .centent{
+  width: 80%;
+  float: left;
+}
+.homeMiddle .centent text{
+  color: red;
+}
+.homeMiddle .home{
+  width: 100%;
+}
+.homeMiddle .home view{
+  width: 50px;
+  float: left;
+  height:60px;
+  margin: 6px;
+}
+.homeMiddle .home image{
+  width:40px;
+  height:40px;
+}
+.goods{
+  width: 100%;
+}
+.goods .goodsItem{
+  width: 46%;
+  float: left;
+  margin: 5px;
+  height: 230px;
+}
+.goods view image{
+  width: 100%;
+  height: 80%;
+}
+.goods .goodsItem .price {
+  
+  color: red;
+}

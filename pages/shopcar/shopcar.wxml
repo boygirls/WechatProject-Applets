@@ -1,0 +1,46 @@
+<view hidden="{{hideShopCar}}">
+  <view class="noShopTitle">购物车空空如也~</view>
+  <view class="noShopBtn">
+    <button type="warn" bindtap="toIndexBtn">去逛逛</button>
+  </view>
+</view>
+
+<view  hidden="{{!hideShopCar}}">
+    <view class="carTop">
+     <text hidden="{{isEdit}}" catchtap="deleteExit">编辑</text>
+     <text hidden="{{!isEdit}}" catchtap="deleteExit">完成</text>
+    </view>
+    <view class="carItem" wx:for = "{{cartList}}" wx:key="item">
+        <view class="goodDetail">
+          <view class="goodsCheck" >
+            <checkbox-group bindchange="onShopCheckChange" data-id="{{item.id}}">
+              <checkbox checked="{{item.isSelect}}" ></checkbox>
+            </checkbox-group>
+          </view>
+          <view class="goodsImgae"><image src="{{item.imgUrl}}"></image></view>
+          <view class="goods">
+            <view class="title">{{item.name}}</view>
+            <view class="priceView">￥{{item.price*item.goodsNum}}</view>
+            <view class="numView">
+              <view data-id="{{item.id}}" data-num="-1" bindtap="addShopGoodsNum">-</view>
+              <view>{{item.goodsNum}}</view>
+              <view data-id="{{item.id}}" data-num="1" bindtap="addShopGoodsNum">+</view>
+            </view>
+          </view>
+          <view class="carItemBottom"></view>
+        </view>
+        
+    </view>
+    <view class="carBottom">
+      <view class="bottomCheck">
+        <checkbox-group bindchange="onAllSelectCheck">
+          <checkbox checked="{{allSelection}}">全选</checkbox>
+        </checkbox-group>
+      </view>
+      <view class="bottomPrice">￥{{totalMoney}}</view>
+      <view class="bottomBtn">
+        <button type="warn" hidden="{{isEdit}}">去结算</button>
+        <button type="warn" hidden="{{!isEdit}}" catchtap="deleteGoods">删除</button>
+      </view>
+    </view>
+</view>

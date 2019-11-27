@@ -1,0 +1,50 @@
+<swiper  autoplay style="height:320px;">
+  <swiper-item wx:for="{{goodsImages}}" wx:for-item="item">
+    <image src="{{item.url}}" style="height:320px;"></image>
+  </swiper-item>
+</swiper>
+<view class="goodsTitle">
+  <view class="name">加绒打底衫长袖女装秋冬装2019年新款潮流洋气初秋百搭内搭上衣服</view>
+  <view class="name1">收藏架构优先发货</view>
+  <view class="name2">
+    <text class="price">￥233.23</text>
+    <text>购买0次</text>
+    <text>共收到0次好评</text>
+  </view>
+</view>
+<view class="goodsJg"></view>
+<view class="goodsYh">优惠卷</view>
+<view class="goodsJg"></view>
+<view>
+  <view wx:for="{{goodsImages}}" wx:for-item="item">
+    <image src="{{item.url}}" ></image>
+</view>
+</view>
+<view class="bottomBtn">
+  <view>
+    <button type="warn" bindtap="showShopView">加入购物车</button>
+  </view>
+  <view>
+    <button type="warn">立即购买</button>
+  </view>
+</view>
+
+<view class="bottomShop" hidden="{{isShopViewShow}}">
+  <view class="titleView">
+    <view class="title">购买数量</view>
+    <view class="shopNumView">
+      <view class="{{shopNum == 1 ? 'no':''}}" data-addNum="-1" catchtap="onAddShopNum">-</view>
+      <view>{{shopNum}}</view>
+      <view data-addNum="1" catchtap="onAddShopNum">+</view>
+    </view>
+  </view>
+
+  <view class="buttonView">
+    <view>
+      <button type="warn" bindtap="hideShopView">加入购物车</button>
+    </view>
+    <view>
+      <button type="warn" bindtap="hideShopView">关闭</button>
+    </view>
+  </view>
+</view>

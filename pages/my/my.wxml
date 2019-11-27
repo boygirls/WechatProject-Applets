@@ -1,0 +1,46 @@
+<!--pages/my/my.wxml-->
+<!-- 头部 -->
+
+<!-- 登录微信头像 -->
+<view class="head">
+<button bindtap="login1">login</button>
+    <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>
+<!-- 我的订单 -->
+<view class="myOrder">
+  <view class="myOrder3">{{myOrder}}</view>
+  <view class="myOrder2">
+    <view>{{myOrder2}}</view>
+    <image src="{{myImage1}}"></image>
+  </view>
+</view>
+
+<!-- 货物状态 -->
+<view class="status1">
+  <view class="status" wx:for="{{myImageStatus}}" wx:key="item">
+    <image src="{{item.url}}"></image>
+    <view>{{item.title}}</view>
+  </view>
+</view>
+
+<!-- 中间的灰色线条 -->
+<view class="grayBorder"></view>
+
+<!-- 我的功能 -->
+
+<view class="headFeatures">
+  <scroll-view scroll-y = "true">
+    <view wx:for="{{myImageFeatures}}" wx:key="item" class="features">
+      <image src="{{item.url}}"></image>
+      <view>{{item.title}}</view>
+    </view>
+    <view class="aboutAs">
+      {{aboutAs}}
+      <view class="symbol"> > </view>
+    </view>
+  </scroll-view>
+
+</view>

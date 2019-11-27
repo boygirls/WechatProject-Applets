@@ -1,0 +1,35 @@
+<scroll-view scroll-x>
+  <view class="homeTitle" style="width:{{homeTitleWidth}}" catchtap="onCatchtap">
+    <block wx:for="{{homeTitle}}" wx:key="item">
+      <view class="{{num == item.id?'homeTitleClick':''}}"data-number="{{item.id}}">{{item.title}}</view>
+    </block>
+  </view>
+</scroll-view>
+<swiper indicator-dots  autoplay>
+  <swiper-item wx:for="{{homeImages}}" wx:key="item">
+    <image src="{{item.url}}"></image>
+  </swiper-item>
+</swiper>
+<view class="homeMiddle">
+  <view class="title">公告：</view>
+  <view class="centent">
+    <swiper autoplay vertical style="height:21px;">
+    <swiper-item wx:for="{{homeContent}}" wx:key="item">
+      <text>{{item.content}}</text>
+    </swiper-item>
+  </swiper>
+  </view>
+  <view class="home">
+    <view wx:for="{{home}}" wx:key="item">
+      <image src="{{item.imgUrl}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>
+<view class="goods">
+  <view class="goodsItem" wx:for="{{goodsList}}" wx:key="item" data-id ="{{item.id}}" bindtap="toGoodsDetail">
+    <image src="{{item.imgUrl}}"></image>
+    <view>{{item.name}}</view>
+    <view class="price">{{item.price}}</view>
+  </view>
+</view>

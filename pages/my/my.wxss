@@ -1,0 +1,91 @@
+/* pages/my/my.wxss */
+
+/* 我的订单 */
+
+.head {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.myOrder {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  height: 35px;
+  line-height: 35px;
+  font-style: center;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.myOrder2 {
+  color: red;
+  display: flex;
+  margin-left: 45%;
+}
+
+.myOrder2 image {
+  margin-top: 4px;
+  width: 25px;
+  height: 25px;
+}
+
+.myOrder3 {
+  margin-left: 3%;
+}
+
+/* 货物状态 */
+
+.status1 {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.status {
+  float: left;
+  margin: 9px 7px;
+}
+
+.status image {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+/* 中间的灰色线条 */
+
+.grayBorder {
+  width: 100%;
+  height: 8px;
+  background-color: #bbb;
+}
+
+/* <!-- 我的功能 --> */
+
+.features {
+  display: flex;
+  height: 42px;
+  font-size: 20px;
+  line-height: 40px;
+  align-content: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #bbb;
+}
+
+.features image {
+  width: 25px;
+  height: 25px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.aboutAs{
+  display: flex;
+  line-height: 40px;
+  align-content: center;
+  padding-left: 10px;
+}
+.symbol{
+  position: absolute;
+  right: 10px;
+}

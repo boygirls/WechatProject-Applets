@@ -1,0 +1,114 @@
+page {
+  background-color: gainsboro;
+}
+.noShopTitle{
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+
+}
+.noShopBtn{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.noShopBtn button{
+  width: 150px;
+  height: 45px;
+}
+.carBottom{
+  position: fixed;
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  bottom:0px;
+}
+.carBottom view{
+  width: 33.33%;
+  float: left;
+}
+.carBottom .bottomCheck{
+  text-align: center;
+  padding-top:10px;
+}
+.carBottom .bottomPrice{
+  text-align: center;
+  padding-top:12px;
+  color: red;
+}
+.carTop{
+  width: 100%;
+  height:20px;
+  text-align: right;
+}
+.carTop text{
+  margin:10px;
+  font-size: 14px;
+  color: #7f7f7f; 
+}
+.carItem{
+  margin-top: 10px;
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+  position: relative;
+}
+.goodDetail{
+  width: 100%;
+  height:100%;
+}
+.goodDetail .goodsCheck{
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 40px;
+}
+.goodDetail .goodsImgae{
+  width: 30%;
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+}
+.goodDetail .goodsImgae image{
+  width: 80px;
+  height: 80px;
+}
+.goodDetail .goods{
+  width: 45%;
+  padding-left:10px;
+  float: left;
+}
+.goodDetail .goods .title{
+  font-size: 15px;
+  margin-top: 10px;
+  width: 100%;
+  height: 70px;
+}
+.goods .priceView{
+  width: 50%;
+  float: left;
+  color: red;
+  font-size:14px;
+}
+.goods .numView{
+  width:50%;
+  float: left;
+}
+.goods .numView view{
+  width: 20px;
+  height: 20px;
+  border: 1px solid gainsboro;
+  text-align: center;
+  float: left;
+}
+.carItemBottom{
+  width: 90%;
+  height: 10px;
+  border-top: 1px solid gainsboro;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
